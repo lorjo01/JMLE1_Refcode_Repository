@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Structure 4</title>
+  <!--  <LINK href="styles.css" rel="stylesheet" type="text/css"/> -->
+  <style>
+  header.page-header {
+      background: no-repeat left/cover url(images/tetons.jpg);
+      display: flex;
+      height: 240px;
+      min-width: 120px;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: #d3d3d3 0 0 1em;
+      }
+
+      header.page-header > h1 {
+          font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
+              fantasy;
+          margin: 2%;
+      }
+
+/* Nav Style - not used in this version
+      .crumbs ol {
+          list-style-type: none;
+          padding-left: 0;
+      }
+
+      .crumb {
+          display: block;
+      }
+
+      .crumb a::after {
+          display: block;
+          color: #000;
+          content: '>';
+          font-size: 80%;
+          font-weight: bold;
+          padding: 0 3px;
+      }*/
+
+/* Main area sections */
+
+  .container{
+    display:grid;
+    grid-template-columns:2fr 4fr 1fr;
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:1em;
+    justify-items:stretch;
+    align-items:stretch;
+  }
+
+  .container > div{
+    background:#eee;
+    padding:1em;
+  }
+  .container > div:nth-child(odd){
+    background:#ddd;
+  }
+
+  .box {}
+
+  .boxLNav{
+    /*align-self:start;*/
+
+  }
+
+  .boxContent{
+    /*align-self:start;*/
+  }
+
+  .boxRLinks{
+    /*justify-self:end;
+    grid-column:2/4;
+    grid-row:3;*/
+  }
+
+
+/* Footer Style */
+
+      footer {
+          display: flex;
+          padding: 10px 5px;
+          background-color: #45a1ff;
+          color: #fff;
+      }
+
+      footer p {
+          flex: 1;
+          margin: 0;
+      }
+
+      footer ul {
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          padding-left: 0;
+          list-style: none;
+      }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="page-header">
+      <h1>A Lorimer Website</h1>
+  </header>
+
+<section>
+
+  <div class="container">
+    <div class="box boxLNav">Box Left Nav</div>
+    <div class="box boxContent">
+      <p>Box Main Content</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    <div class="box boxRLinks">Box Right Links</div>
+  </div>
+
+</section>
+
+  <nav>
+    <ul>
+        <li><a href="https://example.org/bikes">Bikes</a></li>
+        <li><a href="https://example.org/bikes/bmx">BMX</a></li>
+        <li>Jump Bike 3000</li>
+    </ul>
+  </nav>
+
+  <section>
+<h2>This is H2 copy</h2>
+  </section>
+
+
+  <footer>
+      <p>© 2018 John M Lorimer Enterprises</p>
+      <ul>
+          <li>Terms</li>
+          <li>Blog</li>
+          <li>About</li>
+      </ul>
+  </footer>
+
+</body>
+</html>

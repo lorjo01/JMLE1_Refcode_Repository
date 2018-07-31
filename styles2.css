@@ -1,0 +1,118 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+
+tr {
+  border: 2px;
+  background-color: lightgrey;
+}
+
+h3{
+  color: green;
+  text-align: center;
+  font-family: sans-serif;
+
+}
+
+    header.page-header {
+      background: no-repeat left/cover url(images/tetons.jpg);
+      display: flex;
+      height: 240px;
+      min-width: 120px;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: #d3d3d3 0 0 1em;
+      }
+
+      header.page-header > h1 {
+          font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
+              fantasy;
+          margin: 2%;
+      }
+
+/* Nav Style - not used in this version
+      .crumbs ol {
+          list-style-type: none;
+          padding-left: 0;
+      }
+
+      .crumb {
+          display: block;
+      }
+
+      .crumb a::after {
+          display: block;
+          color: #000;
+          content: '>';
+          font-size: 80%;
+          font-weight: bold;
+          padding: 0 3px;
+      }*/
+
+/* Main area sections */
+
+  .container{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-auto-rows:minmax(100px, auto);
+    /*grid-gap:1em;*/
+    justify-items:stretch;
+    align-items:stretch;
+  }
+
+  .container > div{
+    background:#eee;
+    padding:1em;
+  }
+  .container > div:nth-child(odd){
+    background:#ddd;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: #000;
+    border-width: thin;
+  }
+
+  .boxLNav{
+    /*align-self:start;*/
+
+  }
+
+  .boxContent{
+    /*align-self:start;*/
+  }
+
+  .boxRLinks{
+    /*justify-self:end;
+    grid-column:2/4;
+    grid-row:3;*/
+  }
+
+
+/* Footer Style */
+
+      footer {
+          display: flex;
+          padding: 10px 5px;
+          background-color: #45a1ff;
+          color: #fff;
+      }
+
+      footer p {
+          flex: 1;
+          margin: 0;
+      }
+
+      footer ul {
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          padding-left: 0;
+          list-style: none;
+      }

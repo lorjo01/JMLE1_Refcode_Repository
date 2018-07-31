@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Structure 2</title>
+  <!--  <LINK href="styles.css" rel="stylesheet" type="text/css"/> -->
+  <style>
+  header.page-header {
+      background: no-repeat left/cover url(images/tetons.jpg);
+      display: flex;
+      height: 240px;
+      min-width: 120px;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: #d3d3d3 0 0 1em;
+      }
+
+      header.page-header > h1 {
+          font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
+              fantasy;
+          margin: 2%;
+      }
+
+/* Nav Style - not used in this version
+      .crumbs ol {
+          list-style-type: none;
+          padding-left: 0;
+      }
+
+      .crumb {
+          display: block;
+      }
+
+      .crumb a::after {
+          display: block;
+          color: #000;
+          content: '>';
+          font-size: 80%;
+          font-weight: bold;
+          padding: 0 3px;
+      }*/
+
+/* Footer Style */
+
+      footer {
+          display: flex;
+          padding: 10px 5px;
+          background-color: #45a1ff;
+          color: #fff;
+      }
+
+      footer p {
+          flex: 1;
+          margin: 0;
+      }
+
+      footer ul {
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          padding-left: 0;
+          list-style: none;
+      }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="page-header">
+      <h1>A Lorimer Website</h1>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="https://example.org/bikes">Bikes</a></li>
+        <li><a href="https://example.org/bikes/bmx">BMX</a></li>
+        <li>Jump Bike 3000</li>
+    </ul>
+  </nav>
+
+  <section>
+<h2>This is H2 copy</h2>
+  </section>
+
+  <footer>
+      <p>© 2018 John M Lorimer Enterprises</p>
+      <ul>
+          <li>Terms</li>
+          <li>Blog</li>
+          <li>About</li>
+      </ul>
+  </footer>
+
+</body>
+</html>
